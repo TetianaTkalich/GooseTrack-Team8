@@ -22,7 +22,7 @@ export const MonthWrapper = styled.div`
   height: 30px;
   padding: 8px 12px;
 
-  background-color: var(--accent-btn-background);
+  background-color: #3e85f3;
   border-radius: 8px;
   @media (min-width: 768px) {
     height: 34px;
@@ -33,7 +33,7 @@ export const MonthName = styled.p`
   min-width: 94px;
   height: 18px;
 
-  font-family: var(--primary-font);
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -42,7 +42,7 @@ export const MonthName = styled.p`
   text-align: center;
   text-transform: uppercase;
 
-  color: var(--btn-text-color);
+  color: #ffffff;
   @media (min-width: 768px) {
     min-width: 107px;
 
@@ -64,8 +64,8 @@ const StyledLink = styled(NavLink)`
   width: 36px;
   height: 30px;
 
-  background: var(--primary-background-color);
-  border: var(--border-calendar);
+  background: #ffffff;
+  border: 1px solid rgba(220, 227, 229, 0.5);
   opacity: ${props => {
     if (props.disabled) {
       return '0.3';
@@ -83,14 +83,14 @@ const StyledLink = styled(NavLink)`
     width: 38px;
     height: 34px;
 
-    border: var(--border);
+    border: 1px solid rgba(255, 255, 255, 0.15);
   }
 `;
 
 export const ButtonLeft = styled(StyledLink)`
   border-radius: 8px 0px 0px 8px;
 
-  transition: box-shadow var(--animation);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     box-shadow: -4px 2px 10px rgba(136, 165, 191, 1);
   }
@@ -98,7 +98,7 @@ export const ButtonLeft = styled(StyledLink)`
 export const ButtonRight = styled(StyledLink)`
   border-radius: 0px 8px 8px 0px;
 
-  transition: box-shadow var(--animation);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     box-shadow: 4px 2px 10px rgba(136, 165, 191, 1);
   }
@@ -106,7 +106,7 @@ export const ButtonRight = styled(StyledLink)`
 export const Icon = styled.svg`
   width: 16px;
   height: 16px;
-  stroke: var(--secondary-text-color);
+  stroke: #616161;
   fill: transparent;
   @media (min-width: 768px) {
     width: 18px;

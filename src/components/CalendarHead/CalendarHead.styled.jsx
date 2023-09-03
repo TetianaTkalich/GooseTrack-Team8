@@ -5,11 +5,11 @@ const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 
-  background: var(--primary-background-color);
-  border: var(--border-calendar);
+  background: #ffffff;
+  border: 1px solid rgba(220, 227, 229, 0.5);
   border-radius: 8px;
   @media (min-width: 768px) {
-    border: var(--border);
+  border: 1px solid rgba(220, 227, 229, 0.8);
   }
 `;
 export const ListMonth = styled(List)`
@@ -42,12 +42,12 @@ export const Days = styled.li`
 `;
 
 const Day = styled.div`
-  font-family: var(--primary-font);
+  font-family: 'Inter', sans-serif;
   font-style: normal;
 
   text-transform: uppercase;
 
-  color: var(--secondary-text-color);
+  color: #616161;
   text-align: center;
 `;
 
@@ -79,7 +79,7 @@ const DateOfWeek = styled(Day)`
   width: 24px;
   height: 24px;
   padding: 4px 6px;
-  color: var(--calendar-digit-color);
+  color: #343434;
   border-radius: 6px;
 
   @media (min-width: 768px) {
@@ -93,11 +93,11 @@ const DateOfWeek = styled(Day)`
 `;
 
 export const ChoosedDate = styled(DateOfWeek)`
-  background-color: var(--accent-background-color);
-  color: var(--btn-text-color);
+  background-color: #3e85f3;
+  color: #ffffff;
 `;
 export const DateOfWeekCurrentMonth = styled(DateOfWeek)`
-  transition: box-shadow var(--animation);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   :focus {

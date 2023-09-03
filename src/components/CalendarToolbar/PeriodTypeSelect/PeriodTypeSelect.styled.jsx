@@ -14,22 +14,22 @@ const StyledLink = styled(NavLink)`
   width: 76px;
   height: 34px;
 
-  background: var(--button-period-type);
+  background: #21222c;
 
-  font-family: var(--primary-font);
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29px;
 
-  color: var(--color-button-period-type);
+  color: #3e85f3;
 
   &.active {
-    background: var(--active-button-period-type);
-    color: var(--accent-text-color);
+    background: #cae8ff;
+    color: #ffffff;
     &:hover,
     :focus {
-      background-color: var(--active-button-period-type);
+      background-color: #3e85f3;
       box-shadow: none;
     }
   }
@@ -45,21 +45,21 @@ export const StyledLinkMonth = styled(StyledLink)`
   padding: 8px 16px;
 
   border: none;
-  border-right: var(--border-calendar-period-type);
+  border-right: 1px solid rgba(62, 133, 243, 0.2);
   border-radius: 8px 0px 0px 8px;
 
-  transition: background-color var(--animation), box-shadow var(--animation);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   :focus {
-    background-color: var(--hover-button-period-type);
+    background-color: rgba(33, 34, 44, 0.6);
     box-shadow: -4px 2px 16px rgba(136, 165, 191, 1);
   }
 `;
 
 export const LinkActiveMonth = styled(StyledLinkMonth)`
-  background: var(--active-button-period-type);
-  color: var(--accent-text-color);
+  background: #cae8ff;
+  color: #ffffff;
 `;
 
 export const StyledLinkDay = styled(StyledLink)`
@@ -67,11 +67,11 @@ export const StyledLinkDay = styled(StyledLink)`
   border: none;
   border-radius: 0px 8px 8px 0px;
 
-  transition: background-color var(--animation), box-shadow var(--animation);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   :focus {
-    background-color: var(--hover-button-period-type);
+    background-color: rgba(33, 34, 44, 0.6);
     box-shadow: 4px 2px 16px rgba(136, 165, 191, 1);
   }
   @media (min-width: 768px) {
@@ -80,6 +80,6 @@ export const StyledLinkDay = styled(StyledLink)`
 `;
 
 export const LinkActiveDay = styled(StyledLinkDay)`
-  background: var(--active-button-period-type);
-  color: var(--accent-text-color);
+  background: #cae8ff;
+  color: #ffffff;
 `;
