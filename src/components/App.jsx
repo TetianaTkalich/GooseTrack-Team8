@@ -11,6 +11,7 @@ import { fetchCurrentUser } from 'redux/auth/auth-operations';
 import Header from '../components/Header/Header';
 import Loader from '../components/Loader/Loader';
 
+
 const Login = lazy(() => import('../pages/Login'));
 const RegisterPage = lazy(() => import('../pages/Registration'));
 const AccountPage = lazy(() => import('../pages/Account'));
